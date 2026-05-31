@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://btbesf7x80p42"]
 
 [ext_resource type="Texture2D" uid="uid://dotwct2ngb0rd" path="res://misc/folder.svg" id="1_5hfv0"]
-[ext_resource type="StyleBox" uid="uid://cglfbde2r5tct" path="res://styles/frame.tres" id="1_m0rpm"]
-[ext_resource type="StyleBox" uid="uid://dcf1vx5xov8nr" path="res://styles/titlebar.tres" id="2_c6xj6"]
+[ext_resource type="StyleBox" uid="uid://cglfbde2r5tct" path="res://addons/clearlooks/styles/frame.tres" id="1_m0rpm"]
+[ext_resource type="StyleBox" uid="uid://dcf1vx5xov8nr" path="res://addons/clearlooks/styles/titlebar.tres" id="2_c6xj6"]
 [ext_resource type="Texture2D" uid="uid://cu4m4wpk6gu86" path="res://misc/document_open.svg" id="3_c6xj6"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_5hfv0"]
