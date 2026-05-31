@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://btbesf7x80p42"]
+
+[ext_resource type="Texture2D" uid="uid://dotwct2ngb0rd" path="res://misc/folder.svg" id="1_5hfv0"]
+[ext_resource type="StyleBox" uid="uid://cglfbde2r5tct" path="res://styles/frame.tres" id="1_m0rpm"]
+[ext_resource type="StyleBox" uid="uid://dcf1vx5xov8nr" path="res://styles/titlebar.tres" id="2_c6xj6"]
+[ext_resource type="Texture2D" uid="uid://cu4m4wpk6gu86" path="res://misc/document_open.svg" id="3_c6xj6"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_5hfv0"]
+
+[node name="Control" type="Control" unique_id=936886454]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=2073548399]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.5
+offset_top = -63.5
+offset_right = 64.5
+offset_bottom = 63.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("1_m0rpm")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1412180646]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel2" type="Panel" parent="Panel/VBoxContainer" unique_id=1844674594]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_c6xj6")
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/VBoxContainer" unique_id=129491443]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxContainer/MarginContainer" unique_id=1250671298]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer/MarginContainer/VBoxContainer" unique_id=510740487]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=563115085]
+layout_mode = 2
+text = "Open"
+icon = ExtResource("3_c6xj6")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/VBoxContainer/MarginContainer/VBoxContainer" unique_id=1461366017]
+layout_mode = 2
+
+[node name="CheckBox" type="CheckBox" parent="Panel/VBoxContainer/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=381076674]
+layout_mode = 2
+flat = true
+
+[node name="CheckBox2" type="CheckBox" parent="Panel/VBoxContainer/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=73564138]
+layout_mode = 2
+button_group = SubResource("ButtonGroup_5hfv0")
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1370036427]
+layout_mode = 2
+texture = ExtResource("1_5hfv0")
